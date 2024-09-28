@@ -1,5 +1,6 @@
 
 
+import 'package:exam_2/database.dart';
 import 'package:flutter/material.dart';
 
 class SwiggyScreen extends StatelessWidget {
@@ -117,12 +118,17 @@ class SwiggyScreen extends StatelessWidget {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 
-                crossAxisCount: 3), itemBuilder:(BuildContext,int context){
+                crossAxisCount: 4), itemBuilder:(BuildContext,int context){
               
                   return Container(
                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.white),
                  height: 150,
-                 width: 60,
+                 width: 80,
+                 child: Column(
+                  children: [
+                    Image.asset(Database.hList[index]["i1"])
+                  ],
+                 )
                   
                   );
                 } ),
