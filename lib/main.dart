@@ -1,3 +1,4 @@
+import 'package:exam_2/screen3.dart';
 import 'package:exam_2/swiggy.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Swiggy 2',
       theme: ThemeData(
       ),
-      home: SwiggyScreen(),
+      home:Swigggy3Screen(),
     );
   }
 }

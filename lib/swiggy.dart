@@ -119,15 +119,23 @@ class SwiggyScreen extends StatelessWidget {
                 mainAxisSpacing: 10,
                 
                 crossAxisCount: 2),
-                itemCount: 4, itemBuilder:(BuildContext,int context){
+                itemCount: 4, itemBuilder:(BuildContext,int index){
               
                   return Container(
+                    
                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.white),
                  height: 150,
                  width: 80,
+                 
+                 
                  child: Column(
+                  
                   children: [
-                    Image.asset(Database.hList[index]["i1"])
+                    Image.asset(Database.foodList[index]["i1"],height: 110,width: double.infinity,),
+                    SizedBox(height: 2,),
+                    Text(Database.foodList[index]["t1"],textAlign: TextAlign.left,),
+                    SizedBox(height: 1,),
+                    Text(Database.foodList[index]["t2"])
                   ],
         
                  )
