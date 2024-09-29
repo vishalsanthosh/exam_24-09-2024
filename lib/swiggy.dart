@@ -118,7 +118,8 @@ class SwiggyScreen extends StatelessWidget {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 
-                crossAxisCount: 4), itemBuilder:(BuildContext,int context){
+                crossAxisCount: 2),
+                itemCount: 4, itemBuilder:(BuildContext,int context){
               
                   return Container(
                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.white),
@@ -128,6 +129,7 @@ class SwiggyScreen extends StatelessWidget {
                   children: [
                     Image.asset(Database.hList[index]["i1"])
                   ],
+        
                  )
                   
                   );
